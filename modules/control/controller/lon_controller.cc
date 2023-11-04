@@ -14,8 +14,10 @@
  * limitations under the License.
  *****************************************************************************/
 #include "modules/control/controller/lon_controller.h"
+
 #include <algorithm>
 #include <utility>
+
 #include "absl/strings/str_cat.h"
 #include "cyber/common/log.h"
 #include "cyber/time/clock.h"
@@ -24,8 +26,10 @@
 #include "modules/common/math/math_utils.h"
 #include "modules/control/common/control_gflags.h"
 #include "modules/localization/common/localization_gflags.h"
+
 namespace apollo {
 namespace control {
+
 using apollo::common::ErrorCode;
 using apollo::common::Status;
 using apollo::common::TrajectoryPoint;
